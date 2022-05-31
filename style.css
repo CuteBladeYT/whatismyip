@@ -1,0 +1,16 @@
+@font-face {
+    font-family: main;
+    src: url(./font.ttf);
+}
+
+body {
+    font-family: main;
+    font-size: 20px;
+    overflow: hidden auto;
+    background: white;
+    color: black;
+}
+body.theme_dark {
+    background: black;
+    color: white;
+}
