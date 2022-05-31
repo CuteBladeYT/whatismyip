@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#currency > #code").textContent = data.currency_code;
         document.querySelector("#currency > #converter").title = `Converter (USD to ${data.currency_code})`;
     });});});
-    fetch("http://www.geoplugin.net/json.gp").then(fetchResponse=>{fetchResponse.blob().then(body=>{body.text().then(data => {
+    fetch("https://www.geoplugin.net/json.gp").then(fetchResponse=>{fetchResponse.blob().then(body=>{body.text().then(data => {
         data = JSON.parse(data);
         document.querySelector("#IPv4 > code").textContent = data.geoplugin_request;
         document.querySelector("#currency > #symbol").textContent = data.geoplugin_currencySymbol;
